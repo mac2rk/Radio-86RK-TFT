@@ -39,7 +39,7 @@ IC4 and IC5.1 form the brown color `#AA5500`instead of unsightly "dark yellow" `
 0b1110          | `#FFFF55`    | Yellow
 0b1111          | `#FFFFFF`    | White
 
-IC2's function is specific to [Radio-86RK](https://github.com/mac2rk/Radio-86RK-SRAM). In Radio-86RK, the i8275 CRTC forms a raster with 300 horizontal lines, although top 30 and bottom 20 are not used for display. The TFT panel, however, is only 272 pixels tall, so 300-20-272=8 lines at the bottom  of the display area do not fit. Thankfully, the TFT panel ignores HRTC pulses and is completely controlled by VRTC and DEN (Data ENable) signals. IC2 delays the DEN (Data ENable) signal for the TFT panel by 16 lines, fitting the full display area into the panel without reprogramming the CRTC and ensuring compatibility with existing software.
+IC2's function is specific to [Radio-86RK](https://github.com/mac2rk/Radio-86RK-SRAM). In Radio-86RK, the i8275 CRTC forms a raster with 300 horizontal lines, although top 30 and bottom 20 are not used for display. The TFT panel, however, is only 272 pixels tall, so 300-20-272=8 lines at the bottom  of the display area do not fit. Thankfully, the TFT panel ignores HRTC pulses and is completely controlled by VRTC and DEN (Data ENable) signals. IC2 suppresses DEN for the top 16 lines, thus fitting the full display area into the panel without reprogramming the CRTC, ensuring compatibility with existing software.
 
 ## PCB layout
 
