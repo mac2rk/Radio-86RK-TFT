@@ -10,7 +10,7 @@ For many home computers from 1980s, TV was the only display available, and [Radi
 
 Turns out, small TFT display panels are now available, affordable, and can be connected to Radio-86RK relatively easily.
 
-This project is a hardware interface between Intel i8275 CRT controller and a 480x272 pixel TFT panel [ER-TFT050-2](https://www.buydisplay.com/download/manual/ER-TFT050-2_Datasheet.pdf) with the ILI6482 controller onboard, exposing 24-bit RGB parallel interface. The inteface supports 4-bit (IRGB) color, although color is not implemented in [Radio-86RK](https://github.com/mac2rk/Radio-86RK-SRAM).
+This project is a hardware interface between Intel i8275 CRT controller and a 480x272 pixel TFT panel [ER-TFT050-2](https://www.buydisplay.com/download/manual/ER-TFT050-2_Datasheet.pdf) with the ILI6482 controller onboard. This inteface board supports 4-bit (IRGB) color, although color is not implemented in [Radio-86RK](https://github.com/mac2rk/Radio-86RK-SRAM). The interface has been shown to work with a Sinclair ZX Spectrum clone (Harlequin), too, although it was not explored in any detail.
 
 ## Schematic
 
