@@ -16,7 +16,7 @@ This project is a hardware interface between Intel i8275 CRT controller and a 48
 
 [Schematic](Eagle/rk86_tft-schematic.pdf)
 
-In the schematic, IC3 converts logic levels from 5V of [Radio-86RK](https://github.com/mac2rk/Radio-86RK-SRAM) to 3.3V required by the TFT panel; IC6 feeds the TFT panel's backlight (a string of white LEDs) with constant current; IC7 provides I2C interface for the resistive touchscreen; IC8 regulates +5V poswer supply down to +3.3V. Q1 provides protection against wrong power supply polarity, Q2 and Q3 convert I2C voltage levels.
+In the schematic, IC3 converts logic levels from 5V of [Radio-86RK](https://github.com/mac2rk/Radio-86RK-SRAM) to 3.3V required by the TFT panel; IC6 feeds the TFT panel's backlight (a string of white LEDs) with constant current; IC7 provides I2C interface for the resistive touchscreen; IC8 regulates +5V power supply down to +3.3V. Q1 provides protection against wrong power supply polarity, Q2 and Q3 convert I2C voltage levels.
 
 IC4 and IC5.1 form the brown color `#AA5500`instead of unsightly "dark yellow" `#AAAA00` for IRGB=0b0110, forming the standard CGA palette:
 
@@ -49,8 +49,8 @@ IC2's function is specific to [Radio-86RK](https://github.com/mac2rk/Radio-86RK-
 
 Name              | Part      | Value       | Package | Quantity
 ----------------- | --------- | ----------- | ------- | --------
-ER-TFT050-2       | LCD panel | ER-TFT050-2 |         | 1
-ER-TFT050-2       | 30-way 0.5mm FPC connector, top contact |  | Molex 54014-4031 | 1
+LCD1              | LCD panel | ER-TFT050-2 |         | 1
+LCD1              | 30-way 0.5mm FPC connector, top contact |  | Molex 54014-4031 | 1
 IC1               | Logic IC  | 74HC04PW    | TSSOP14 | 1
 IC2               | Logic IC  | 74HC161PW   | TSSOP16 | 1
 IC3               | Logic IC  | 74LVC8T245DBQR | TSSOP24 | 1
